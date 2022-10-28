@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg,#e2c35d,#d88771);
+    color: white;
+    min-height: 100vh;
+}
+h1,
+form,
+.to-do-container,
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 7.5rem;
+    font-size: 2.8rem;
+}
+button,
+input{
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 0.2rem;
+}
+.todo-container{
+    background-color: white;
+    margin: 1rem 0rem;
+    min-height: fit-content;
+}
+.todo-item{
+    list-style: none;
+    color: rgb(8, 7, 7);
+    flex-grow: 1;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+.delete-btn,
+.complete-btn{
+    cursor: pointer;
+}
+.fa-check,
+.fa-trash-can{
+    padding: 0.2rem 0.5rem;
+    /* This will specify to treat it as a button not as icon. */
+    pointer-events: none;
+    color: white;
+}
+.delete-btn{
+    background-color: red;
+}
+.complete-btn{
+    background-color: green;
+}
+.completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width:500px){
+    h1{
+        font-size: 2.5rem;
+        margin: 3rem 0rem -1.8rem 0rem;
+    }
+}
